@@ -1,0 +1,1 @@
+{"powerBoosters":[{"name":"Cursor Power","startPrice":1000000.0,"priceMultiplier":2.0,"curPower":1.0,"powerMultiplier":1.0,"powerChanging":"+"},{"name":"Factory Power","startPrice":10.0,"priceMultiplier":2.0,"curPower":0.5,"powerMultiplier":2.0,"powerChanging":"*"}]}
