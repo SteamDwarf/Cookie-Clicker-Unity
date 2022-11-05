@@ -51,6 +51,20 @@ public class Shop : MonoBehaviour
         return false;
     }
 
+    public bool BuySpriteBooster(BoosterTypes boosterType, float price, Sprite sprite, float power)
+    {
+        if(gameManager.GetCurrentCookies() >= price)
+        {
+            gameManager.TakeMyMoney(price);
+            boostManager.UpdateSprite(boosterType, sprite, power);
+
+            return true;
+        }
+
+        return false;
+    }
+
+
     public void UpdateCountBoosterPower(BoosterTypes boosterType, float newPower)
     {
         foreach (GameObject countBooster in countBoosters)
@@ -63,6 +77,7 @@ public class Shop : MonoBehaviour
             }
         }
     }
+
 
     private void ShowPowerBooster(BoosterTypes boosterType)
     {

@@ -17,6 +17,8 @@ public enum BoosterTypes
 {
     Click,
     Farm,
-    Factory
+    Factory,
+    CookieSprite,
+    BackgroundSprite
 }
 

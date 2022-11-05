@@ -11,10 +11,10 @@ public class CookieParticle : MonoBehaviour
 
     void Start()
     {
-        float x = Random.Range(-100, 100);
-        float y = Random.Range(-100, 100);
+        //float x = Random.Range(-100, 100);
+        //float y = Random.Range(-100, 100);
 
-        transform.localPosition = new Vector3(x, y, 0);
+        //transform.localPosition = new Vector3(x, y, 0);
     }
 
     void Update()
@@ -30,8 +30,8 @@ public class CookieParticle : MonoBehaviour
         }
     }
 
-    public void SetNum(float num)
+    public void SetText(string text)
     {
-        numText.text = $"+{num}";
+        numText.text = text;
     }
 }
